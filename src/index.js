@@ -6,9 +6,10 @@ import Header from './common/Header';
 import axios from 'axios';
 //set main base url
 // axios.defaults.baseURL='http://localhost:8000/api';
-axios.defaults.baseURL='https://jacksonsoriano.whf.bz/api';
-//get the token and save for authorization to be used by api/user route
+axios.defaults.baseURL='http://jacksonsoriano.whf.bz/api';
+// //get the token and save for authorization to be used by api/user route
 axios.defaults.headers.common['Authorization']= 'Bearer '+ localStorage.getItem('token');
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
